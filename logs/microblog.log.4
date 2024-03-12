@@ -1,0 +1,99 @@
+2024-02-18 19:08:39,781 ERROR: Exception on /explore [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\routes.py", line 141, in explore
+    posts = Post.query.order_by(Post.timestamp.desc()).paginate(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Query.paginate() takes 1 positional argument but 4 were given
+2024-02-18 19:09:22,435 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-18 19:09:27,945 ERROR: Exception on /explore [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\routes.py", line 141, in explore
+    posts = Post.query.order_by(Post.timestamp.desc()).paginate(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Query.paginate() takes 1 positional argument but 4 were given
+2024-02-18 19:11:03,735 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-18 19:11:06,656 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-18 23:46:56,056 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-18 23:46:58,644 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-18 23:50:19,943 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-18 23:50:23,565 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-18 23:54:05,995 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-18 23:54:07,733 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-18 23:57:21,524 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-18 23:57:23,584 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-18 23:58:33,086 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-18 23:58:34,674 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-19 00:01:08,160 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-19 00:03:13,111 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-19 00:03:14,796 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-19 00:04:32,327 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-19 00:04:49,273 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-19 00:05:14,620 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-19 00:05:18,928 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-19 00:10:34,156 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-19 00:10:36,144 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-19 00:12:57,011 INFO: Microblog startup [in C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-19 00:20:44,091 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-19 00:20:45,748 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 22:34:54,973 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 22:35:00,796 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 22:41:19,264 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 22:41:44,996 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 22:51:43,637 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 22:52:07,927 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 22:58:12,682 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 22:58:14,316 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 22:58:45,266 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 22:58:52,115 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:00:11,593 INFO: Microblog startup [in C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:00:54,711 INFO: Microblog startup [in C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:01:46,610 INFO: Microblog startup [in C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:04:34,122 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:06:51,338 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:06:53,905 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:11:02,780 INFO: Microblog startup [in C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:11:47,838 INFO: Microblog startup [in C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:18:19,735 INFO: Microblog startup [in C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:20:31,037 INFO: Microblog startup [in C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:26:59,529 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:27:01,503 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:31:21,848 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:31:23,420 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:32:33,264 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:32:45,161 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:32:49,910 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:32:54,402 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:33:25,190 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:36:19,558 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:36:21,166 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
+2024-02-20 23:37:14,533 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:44]
