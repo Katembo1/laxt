@@ -115,3 +115,5 @@ jinja2.exceptions.TemplateNotFound: errors/404.html
 2024-03-10 11:08:59,602 INFO: Microblog startup [in C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:79]
 2024-03-12 19:13:51,602 INFO: Microblog startup [in /workspaces/IAN-PROJECT-042miro/app/__init__.py:79]
 2024-03-12 19:13:52,353 INFO: Microblog startup [in /workspaces/IAN-PROJECT-042miro/app/__init__.py:79]
+2024-03-12 19:29:09,007 INFO: Microblog startup [in /workspaces/IAN-PROJECT-042miro/app/__init__.py:79]
+2024-03-12 19:29:09,673 INFO: Microblog startup [in /workspaces/IAN-PROJECT-042miro/app/__init__.py:79]
