@@ -1,5 +1,10 @@
 import os
+
+from dotenv import load_dotenv
 basedir = os.path.abspath(os.path.dirname(__file__))
+load_dotenv(os.path.join(basedir, '.env'))
+
+
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY')or 'you-will-never-guess'
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
@@ -11,8 +16,9 @@ class Config(object):
     MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS') is not None
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    ADMINS = ['jphtkatembo1841@gmail.com']
+    ADMINS = ['YOUR-MAIL']
    
     POSTS_PER_PAGE = 25
     LANGUAGES = ['en', 'es']
-    MS_TRANSLATOR_KEY= os.environ.get('MS_TRANSLATOR_KEY') or 'aac317f78b4941f781ed7359c81ccac5'
+    MS_TRANSLATOR_KEY= os.environ.get('MS_TRANSLATOR_KEY') 
+     #'aac317f78b4941f781ed7359c81ccac5'

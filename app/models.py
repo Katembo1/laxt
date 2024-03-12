@@ -1,3 +1,4 @@
+from flask import current_app
 from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import datetime
 from app import db,login
@@ -8,7 +9,7 @@ import sqlalchemy as sa
 import sqlalchemy.orm as so
 from time import time
 import jwt
-from app import app
+
 followers = sa.Table(
     'followers',
     db.metadata,
@@ -84,17 +85,23 @@ class User(UserMixin, db.Model):
     def get_reset_password_token(self, expires_in=600):
             return jwt.encode(
                 {'reset_password': self.id, 'exp': time() + expires_in},
-                app.config['SECRET_KEY'], algorithm='HS256')
+                current_app.config['SECRET_KEY'], algorithm='HS256')
 
+    def get_reset_password_token(self, expires_in=600):
+        return jwt.encode(
+            {'reset_password': self.id, 'exp': time() + expires_in},
+              current_app.config['SECRET_KEY'], algorithm='HS256')
     @staticmethod
     def verify_reset_password_token(token):
             try:
-                id = jwt.decode(token, app.config['SECRET_KEY'],
+                id = jwt.decode(token, current_app.config['SECRET_KEY'],
                                 algorithms=['HS256'])['reset_password']
             except:
                 return
             return db.session.get(User, id)
-
+    @login.user_loader
+    def load_user(id):
+                    return User.query.get(int(id))
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     body = db.Column(db.String(140))
@@ -105,7 +112,5 @@ class Post(db.Model):
         return '<Post {}>'.format(self.body)
 
 
-    @login.user_loader
-    def load_user(id):
-                return User.query.get(int(id))
+   
     
