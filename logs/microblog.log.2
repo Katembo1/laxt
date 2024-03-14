@@ -1,4 +1,4 @@
-2024-03-09 22:44:50,842 ERROR: Exception on / [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
+2024-03-09 22:55:49,438 ERROR: Exception on /index [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
 Traceback (most recent call last):
   File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
     response = self.full_dispatch_request()
@@ -17,9 +17,9 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\routes.py", line 159, in index
     language=language)
-             ^^^^^^^^
+    ^^^^^^^^
 UnboundLocalError: cannot access local variable 'language' where it is not associated with a value
-2024-03-09 22:46:34,018 ERROR: Exception on /index [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
+2024-03-09 22:56:18,198 ERROR: Exception on /index [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
 Traceback (most recent call last):
   File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
     response = self.full_dispatch_request()
@@ -34,93 +34,83 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\routes.py", line 159, in index
+    #                    language=language)
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'language' where it is not associated with a value
+2024-03-09 23:02:23,534 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:54]
+2024-03-10 00:12:17,179 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:54]
+2024-03-10 00:15:39,541 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:54]
+2024-03-10 00:15:55,305 ERROR: Exception on / [GET] [in C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
     return current_app.ensure_sync(func)(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\routes.py", line 159, in index
     language=language)
              ^^^^^^^^
 UnboundLocalError: cannot access local variable 'language' where it is not associated with a value
-2024-03-09 22:47:44,802 ERROR: Exception on /index [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
+2024-03-10 00:17:07,496 ERROR: Exception on / [GET] [in C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py:828]
 Traceback (most recent call last):
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
     response = self.full_dispatch_request()
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
     rv = self.handle_user_exception(e)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
     rv = self.dispatch_request()
          ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
     return current_app.ensure_sync(func)(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\routes.py", line 159, in index
     language=language)
              ^^^^^^^^
 UnboundLocalError: cannot access local variable 'language' where it is not associated with a value
-2024-03-09 22:53:46,269 ERROR: Exception on /index [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
+2024-03-10 00:17:22,995 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:54]
+2024-03-10 00:17:36,567 ERROR: Exception on / [GET] [in C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py:828]
 Traceback (most recent call last):
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
     response = self.full_dispatch_request()
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
     rv = self.handle_user_exception(e)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
     rv = self.dispatch_request()
          ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
     return current_app.ensure_sync(func)(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\routes.py", line 159, in index
-    language=guess_language(form.post.data))
+    language=language)
              ^^^^^^^^
 UnboundLocalError: cannot access local variable 'language' where it is not associated with a value
-2024-03-09 22:53:57,253 ERROR: Exception on /index [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
-Traceback (most recent call last):
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\routes.py", line 159, in index
-    language=guess_language(form.post.data))
-             ^^^^^^^^
-UnboundLocalError: cannot access local variable 'language' where it is not associated with a value
-2024-03-09 22:54:24,418 ERROR: Exception on /index [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
-Traceback (most recent call last):
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\routes.py", line 159, in index
-    language='en')
-             ^^^^^^
-UnboundLocalError: cannot access local variable 'language' where it is not associated with a value
+2024-03-10 00:29:32,192 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:54]
+2024-03-10 00:31:54,742 INFO: Microblog startup [in C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:54]
+2024-03-10 00:32:18,741 INFO: Microblog startup [in C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:54]
+2024-03-10 00:32:33,326 INFO: Microblog startup [in C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:54]
+2024-03-10 09:43:31,841 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:79]
+2024-03-10 10:20:37,244 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:79]
+2024-03-10 10:23:14,748 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:79]
