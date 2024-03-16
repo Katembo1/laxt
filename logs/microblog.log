@@ -1,2 +1,124 @@
+<<<<<<< HEAD
 2024-03-14 14:00:40,316 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:80]
 2024-03-14 14:01:05,848 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:80]
+=======
+2024-03-10 10:23:27,368 ERROR: Exception on / [GET] [in C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\main\routes.py", line 47, in index
+    return render_template('index.html', title=_('Home'), form=form,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\templates\index.html", line 2, in top-level template code
+    {% import "bootstrap_wtf.html" as wtf %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\templates\base.html", line 20, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('index') }}">Microblog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 1074, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 1063, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\werkzeug\routing\map.py", line 919, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'index'. Did you mean 'main.index' instead?
+2024-03-10 10:23:29,493 ERROR: Exception on /favicon.ico [GET] [in C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 844, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 453, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 755, in handle_user_exception
+    return self.handle_http_exception(e)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\app.py", line 730, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\errors\handlers.py", line 8, in not_found_error
+    return render_template('errors/404.html'), 404
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\.venv\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: errors/404.html
+2024-03-10 10:31:55,835 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:79]
+2024-03-10 10:31:58,145 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:79]
+2024-03-10 10:36:54,397 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:79]
+2024-03-10 10:37:06,409 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:79]
+2024-03-10 10:39:07,735 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:79]
+2024-03-10 10:39:09,509 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:79]
+2024-03-10 10:41:05,072 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:79]
+2024-03-10 10:41:06,885 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:79]
+2024-03-10 10:42:51,268 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:79]
+2024-03-10 10:49:41,059 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:79]
+2024-03-10 10:49:43,276 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:79]
+2024-03-10 10:55:02,918 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:79]
+2024-03-10 10:55:05,137 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:79]
+2024-03-10 11:08:59,602 INFO: Microblog startup [in C:\Users\Hp\OneDrive\Documents\IAN PROJECT 042\app\__init__.py:79]
+2024-03-12 19:13:51,602 INFO: Microblog startup [in /workspaces/IAN-PROJECT-042miro/app/__init__.py:79]
+2024-03-12 19:13:52,353 INFO: Microblog startup [in /workspaces/IAN-PROJECT-042miro/app/__init__.py:79]
+2024-03-12 19:29:09,007 INFO: Microblog startup [in /workspaces/IAN-PROJECT-042miro/app/__init__.py:79]
+2024-03-12 19:29:09,673 INFO: Microblog startup [in /workspaces/IAN-PROJECT-042miro/app/__init__.py:79]
+>>>>>>> 2240907bd6dc90f14a40cf3ed1ff0b49bb3ed9c8
