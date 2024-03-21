@@ -73,7 +73,7 @@ def explore():
 def user(username):
     user = db.first_or_404(sa.select(User).where(User.username == username))
     page = request.args.get('page', 1, type=int)
-    query = user.posts.select().order_by(Post.timestamp.desc())
+    query = user.posts.order_by(Post.timestamp.desc())
     posts = db.paginate(query, page=page,
                         per_page=current_app.config['POSTS_PER_PAGE'],
                         error_out=False)
