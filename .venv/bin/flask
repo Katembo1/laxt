@@ -1,4 +1,4 @@
-#!/workspaces/IAN-PROJECT-042miro/.venv/bin/python
+#!/workspaces/laxt/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
